@@ -1,8 +1,7 @@
 
 *{
-    width: auto;
-    height: auto;
     background-image: url("images/background.jpg");
+    max-width: device-width;
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
