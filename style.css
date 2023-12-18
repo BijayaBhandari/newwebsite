@@ -8,8 +8,8 @@
 .banner{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
-    width:500px;
-    height:600px;
+    width: 100%;
+    height: 100%;
     padding-top: 2rem;
     padding-bottom: 1rem;
     color: blue;
