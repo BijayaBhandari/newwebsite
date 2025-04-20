@@ -34,7 +34,7 @@ header {
 /* Background Image Section */
 .hero {
   height: 90vh;
-  background-image: url('https://wallpapercave.com/wp/wp2519271.jpg'); /* You can replace this with your own image */
+  background-image: url('/images/bg.jpg'); /* You can replace this with your own image */
   background-size: cover;
   background-position: center;
 }
