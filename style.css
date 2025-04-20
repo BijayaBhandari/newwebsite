@@ -1,47 +1,40 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.banner{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    width: 100%;
-    height: 100%;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    color: blue;
-
-
-}
-body{
-  background-color: #E6E6FA;
-    background-size: cover;
-    background-image: url("/images/bg.jpg");
-    background-size: cover;
-}
-nav{
-display: flex;
-justify-content: space-around;
-align-items: center;
-width: 100%;
-height: 100%;
-  background-color: #D3D3D3;
-
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-ul li{
-    text-indent: 2rem;
-    display:inline-block;
-    list-style-type: none;
-    text-decoration-line: none;
-    color: black;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+/* Header Section */
+header {
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
-ul li a{
-    text-decoration-line: none;
 
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: blue;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #003366;
+  font-size: 14px;
+}
+
+/* Background Image Section */
+.hero {
+  height: 90vh;
+  background-image: url('https://wallpapercave.com/wp/wp2519271.jpg'); /* You can replace this with your own image */
+  background-size: cover;
+  background-position: center;
 }
