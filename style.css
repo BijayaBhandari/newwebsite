@@ -1,5 +1,6 @@
 /* ============ Tokens ============ */
 :root {
+  /* Light mode (default) */
   --ink: #201a14;
   --navy: #16233f;
   --navy-deep: #101a30;
@@ -16,6 +17,36 @@
   --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
 
   --max-w: 1080px;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --ink: #faf6ee;
+  --navy: #2a3f5f;
+  --navy-deep: #1a2d45;
+  --sand: #2a3f5f;
+  --paper: #1a1410;
+  --saffron: #f5b852;
+  --maroon: #d97a7a;
+  --pine: #5a7a6a;
+  --line: rgba(250, 246, 238, 0.12);
+  --line-light: rgba(32, 26, 20, 0.22);
+}
+
+/* Auto mode respects prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #faf6ee;
+    --navy: #2a3f5f;
+    --navy-deep: #1a2d45;
+    --sand: #2a3f5f;
+    --paper: #1a1410;
+    --saffron: #f5b852;
+    --maroon: #d97a7a;
+    --pine: #5a7a6a;
+    --line: rgba(250, 246, 238, 0.12);
+    --line-light: rgba(32, 26, 20, 0.22);
+  }
 }
 
 * {
