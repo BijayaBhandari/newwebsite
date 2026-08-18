@@ -3,21 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CTN</title>
+  <title>CTN — Bijaya Bhandari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <div class="logo">CTN</div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Tools</a>
-      <a href="#">About Me</a>
-      <a href="#">Others</a>
-      <a href="#">Contact</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About Me</a>
+      <a href="#others">Others</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="hero"></main>
+  <!-- Hero -->
+  <main class="hero" id="home">
+    <div class="hero-inner">
+      <p class="eyebrow">bba graduate — finance specialization</p>
+      <h1 class="hero-name">Bijaya<br>Bhandari</h1>
+      <p class="hero-tagline">Reader of minds through psychology books. Writer of quiet poems.
+        Keeper between the posts. Eye behind the camera. Devotee of Lord Ram.</p>
+
+      <div class="stamp-row">
+        <span class="stamp stamp--saffron" style="--r:-6deg">Goalkeeper</span>
+        <span class="stamp stamp--maroon" style="--r:4deg">Poet</span>
+        <span class="stamp stamp--navy" style="--r:-3deg">Photographer</span>
+        <span class="stamp stamp--saffron" style="--r:5deg">Finance Grad</span>
+        <span class="stamp stamp--maroon" style="--r:-4deg">Ram Bhakt</span>
+        <span class="stamp stamp--navy" style="--r:3deg">Samsung Fanboy</span>
+      </div>
+
+      <a href="#contact" class="hero-cta">Get in touch ↓</a>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-photo" aria-hidden="true">
+        <span>BB</span>
+      </div>
+      <div class="about-copy">
+        <p class="section-label">01 — About Me</p>
+        <h2 class="section-title">A finance mind with a poet's eye.</h2>
+        <p class="about-text">
+          I'm Bijaya Bhandari, a BBA graduate with a specialization in finance. Outside the
+          spreadsheets, I read books on human psychology, write poetry, and stand between the
+          posts as a football goalkeeper. I'm a photography enthusiast, a technology enthusiast,
+          an unapologetic Samsung fanboy, and spiritually rooted — especially devoted to Lord Ram.
+        </p>
+        <ul class="interest-tags">
+          <li>Human Psychology</li>
+          <li>Poetry</li>
+          <li>Football — Goalkeeping</li>
+          <li>Photography</li>
+          <li>Technology</li>
+          <li>Samsung</li>
+          <li>Spirituality — Lord Ram</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section class="section section--sand" id="resources">
+    <div class="section-inner">
+      <p class="section-label">02 — Resources</p>
+      <h2 class="section-title">Resources</h2>
+      <p class="section-sub">Study materials and references, organized by category.</p>
+
+      <div class="tabs" role="tablist" aria-label="Resource categories">
+        <button class="tab tab--active" role="tab" aria-selected="true">BBA Study Materials</button>
+        <button class="tab tab--ghost" role="tab" aria-selected="false" title="Add another category">+ Add category</button>
+      </div>
+
+      <div class="file-grid" role="tabpanel">
+        <button class="file-slot"><span class="file-slot-num">01</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">02</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">03</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">04</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">05</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">06</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">07</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">08</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">09</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+        <button class="file-slot"><span class="file-slot-num">10</span><span class="file-plus">+</span><span class="file-label">Add file</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Others -->
+  <section class="section" id="others">
+    <div class="section-inner">
+      <p class="section-label">03 — Others</p>
+      <h2 class="section-title">Beyond the balance sheet</h2>
+
+      <div class="others-grid">
+        <article class="other-card">
+          <p class="other-kicker">Poetry Corner</p>
+          <p class="other-text">A few lines I've written, and a few more I'm still writing.</p>
+        </article>
+        <article class="other-card">
+          <p class="other-kicker">Behind the Lens</p>
+          <p class="other-text">Frames from wherever the light looked interesting.</p>
+        </article>
+        <article class="other-card">
+          <p class="other-kicker">Between the Posts</p>
+          <p class="other-text">Saves, misses, and everything a keeper sees from the back.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--navy" id="contact">
+    <div class="section-inner">
+      <p class="section-label section-label--light">04 — Contact</p>
+      <h2 class="section-title section-title--light">Let's connect</h2>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://www.facebook.com/bijayabhandari01" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M15 8h-1.5A2 2 0 0 0 11.5 10v2H9v3h2.5v6h3v-6H17l.5-3h-3v-1.5c0-.4.3-.5.6-.5H15z" fill="currentColor" stroke="none"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a class="contact-card" href="https://www.instagram.com/ig_bizeyuri.bat?igsh=YjNodmNpOGR6bnI=" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="contact-card" href="https://wa.me/9779861686988" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.4L4 20z"/><path d="M8.5 9.5c.3 2.7 2.3 4.7 5 5" stroke-linecap="round"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a class="contact-card" href="https://www.tiktok.com/@hamronepalpicture?_r=1&_t=ZS-98z57xafkph" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.4 2.3 2 3.8 4 4"/></svg>
+          <span>TikTok</span>
+        </a>
+        <a class="contact-card" href="mailto:bijaya.bhandari.56@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
+          <span>Gmail</span>
+        </a>
+        <a class="contact-card" href="https://t.me/GEMMIES_BJ" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 4L3 11l6 2.2M21 4l-4 16-8-6.8M21 4L9 13.2"/></svg>
+          <span>Telegram</span>
+        </a>
+        <a class="contact-card" href="#" onclick="navigator.clipboard&&navigator.clipboard.writeText('bijayabhandari.');this.querySelector('span').textContent='Copied!';return false;">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 13c1 1.3 2.4 2 4 2s3-.7 4-2M9 10h.01M15 10h.01"/></svg>
+          <span>Discord — bijayabhandari.</span>
+        </a>
+        <a class="contact-card" href="https://www.youtube.com/@Bijayswhereabouts" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Bijaya Bhandari · CTN</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
 </html>
