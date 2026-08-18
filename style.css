@@ -46,6 +46,32 @@ img {
   display: block;
 }
 
+/* Firefox's default <button> styling (padding, font, border, background)
+   differs a lot from Chrome's — reset it so .tab / .file-slot / .nav-toggle
+   render identically everywhere instead of inheriting native button chrome. */
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: inherit;
+}
+
+/* Firefox honors a flex/grid item's content-based minimum width more
+   strictly than Chrome, which can force tracks wider than their column
+   and break the whole grid onto a horizontal scroll. This resets that. */
+.contact-grid > *,
+.others-grid > *,
+.file-grid > *,
+.about-grid > *,
+.stamp-row > * {
+  min-width: 0;
+}
+
 :focus-visible {
   outline: 2px solid var(--saffron);
   outline-offset: 3px;
@@ -448,6 +474,10 @@ header {
   height: 20px;
   flex-shrink: 0;
   color: var(--saffron);
+}
+
+.contact-card span {
+  overflow-wrap: break-word;
 }
 
 /* ============ Footer ============ */
