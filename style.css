@@ -259,12 +259,34 @@ header {
   margin-bottom: 18px;
 }
 
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .hero-name {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(48px, 9vw, 108px);
   line-height: 0.98;
   letter-spacing: -1px;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--saffron);
+  box-shadow: 0 0 0 5px rgba(226, 161, 58, 0.15);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-tagline {
@@ -382,7 +404,7 @@ header {
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
-  font-size: 56px;
+  font-size: 34px;
   color: var(--paper);
   border: 4px solid var(--line);
   box-shadow: 0 0 0 1px var(--line);
@@ -527,7 +549,11 @@ header {
   .about-photo {
     width: 140px;
     height: 140px;
-    font-size: 36px;
+    font-size: 22px;
+  }
+  .hero-photo {
+    width: 90px;
+    height: 90px;
   }
   .others-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -576,6 +602,17 @@ header {
     min-height: 80vh;
   }
 
+  .hero-top {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-photo {
+    width: 76px;
+    height: 76px;
+  }
+
   .section {
     padding: 64px 20px;
   }
@@ -588,6 +625,6 @@ header {
   .about-photo {
     width: 120px;
     height: 120px;
-    font-size: 32px;
+    font-size: 19px;
   }
 }
